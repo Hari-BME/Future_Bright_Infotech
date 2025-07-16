@@ -1,0 +1,216 @@
+/* src/pages/Home.css */
+
+/* General Styles */
+.home-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .hero-section {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out 0.5s;
+  }
+  
+  /* Section Styles */
+  .about-us, .services, .why-choose-us, .call-to-action {
+    margin: 30px 0;
+  }
+  
+  .about-us h2, .services h2, .why-choose-us h2, .call-to-action h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about-us p, .services p, .why-choose-us li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Service Cards */
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-item h3 {
+    font-size: 1.6rem;
+    color: #4CAF50;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .service-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Ensure text color doesn't change */
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .why-choose-us li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .why-choose-us li:before {
+    content: "✓";
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  
+  /* Call to Action Section */
+  .call-to-action {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out 1s;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .call-to-action button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-to-action button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section p {
+      font-size: 1.1rem;
+    }
+  
+    .about-us, .services, .why-choose-us, .call-to-action {
+      margin: 20px 0;
+    }
+  
+    .services {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .service-item {
+      padding: 15px;
+    }
+  
+    .call-to-action h2 {
+      font-size: 1.8rem;
+    }
+  
+    .call-to-action button {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .services {
+      grid-template-columns: 1fr;
+    }
+  
+    .service-item {
+      padding: 10px;
+    }
+  
+    .call-to-action h2 {
+      font-size: 1.5rem;
+    }
+  
+    .call-to-action p {
+      font-size: 1rem;
+    }
+  
+    .call-to-action button {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Keyframes for Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

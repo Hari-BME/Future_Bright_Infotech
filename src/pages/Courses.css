@@ -1,0 +1,159 @@
+/* src/pages/Courses.css */
+
+/* General Styles */
+.courses-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .courses-header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .courses-header h1 {
+    font-size: 3rem;
+  }
+  
+  .courses-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Course Categories */
+  .course-category {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .course-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+  }
+  
+  .course-card p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+  }
+  
+  .course-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-card ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .course-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .course-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Call-to-Action Section */
+  .cta {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out 1s;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+  }
+  
+  .cta button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .courses-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .courses-header p {
+      font-size: 1.1rem;
+    }
+  
+    .course-card {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .course-btn {
+      font-size: 1rem;
+    }
+  
+    .cta h2 {
+      font-size: 1.5rem;
+    }
+  
+    .cta p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

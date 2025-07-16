@@ -1,0 +1,95 @@
+/* src/pages/Contact.css */
+.contact-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .contact-header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .contact-header h1 {
+    font-size: 3rem;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .contact-details {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-details h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .contact-details p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .form-group label {
+    font-size: 1.1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
+  
